@@ -1,6 +1,7 @@
 # main text of home
 title: Davide Panza
-bio: Data Scientist and AI Specialist, with a past as a Neuroscientist and an even older past as a Musician. Living in Germany and getting used to Capitalise Everything.
+bio: Data Scientist and AI Specialist, with a past as a Neuroscientist and an even older past as a Musician. 
+#Living in Germany and getting used to Capitalise Everything.
 
 # # twitter summary info
 # description: A blog about technology and stuff related
@@ -40,13 +41,13 @@ linkedin: www.linkedin.com/in/davide-panza-a90758282
 github: https://github.com/DavidePanza
 email: davide.panza@gmail.com
 
-# authors:
-#   johndoe:
-#     name: John Doe
-#     bio: A Man who travels the world eating noodles
-#     external-image: false
-#     picture: assets/images/profile.jpg
-#     twitter: johndoe
+authors:
+  johndoe:
+    name: John Doe
+    bio: A Man who travels the world eating noodles
+    external-image: false
+    picture: assets/images/myself.jpg
+    twitter: johndoe
 #   jamesfoster:
 #     name: James Foster
 #     bio: A Man who develops software with coffee
