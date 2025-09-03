@@ -20,7 +20,9 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://sergiokopplin.github.io/indigo
+# Site URL configuration
+url: https://davidepanza.github.io
+baseurl: "/Portfolio"
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -34,9 +36,9 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-linkedin: mylinkedin
-github: mygithub
-email: myemail@gmail.com
+linkedin: www.linkedin.com/in/davide-panza-a90758282
+github: https://github.com/DavidePanza
+email: davide.panza@gmail.com
 
 # authors:
 #   johndoe:
