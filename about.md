@@ -30,11 +30,11 @@ layout: page
 
 <br>
 
-<h2>Certifications & Education</h2>
+<!-- <h2>Certifications & Education</h2> -->
 
-<ul>
+<!-- <ul>
 	<li><strong>AWS Certified Data Engineer - Associate</strong> (2024)</li>
 	<li><strong>M.S. in Cognitive Neuroscience</strong> - Freie Universität Berlin (Grade: 1.1)</li>
 	<li><strong>Data Science Retreat</strong> - Intensive full-time program (2025)</li>
 	<li><strong>CRACK Fellowship</strong> - European Research Council funded research</li>
-</ul>
+</ul> -->
