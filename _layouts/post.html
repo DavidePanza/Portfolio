@@ -16,7 +16,7 @@ layout: page
 {% if site.show-tags %}
     <div class="post-tags">
         {% for tag in page.tags %}
-            <a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+            <a class="item" href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
         {% endfor %}
     </div>
 {% endif %}
@@ -31,7 +31,7 @@ layout: page
             <a class="prev"></a>
         {% endif %}
         {% if page.next.hidden == false and page.next.url %}
-            <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+            <a class="next" href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
         {% endif %}
     </div>
 {% endif %}
