@@ -1,6 +1,6 @@
 # main text of home
 title: Davide Panza
-bio: Data Scientist and AI Specialist, with a past as a Neuroscientist and an even older past as a Musician. 
+bio: MSc in Neuroscience • Trained Data Scientist • AI Enthusiast • Jazz Musician
 #Living in Germany and getting used to Capitalise Everything.
 
 # # twitter summary info
@@ -9,7 +9,7 @@ bio: Data Scientist and AI Specialist, with a past as a Neuroscientist and an ev
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/myself.jpg
+picture: assets/images/myself_squared.jpg
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
@@ -37,8 +37,8 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-linkedin: www.linkedin.com/in/davide-panza-a90758282
-github: https://github.com/DavidePanza
+linkedin: davide-panza-a90758282
+github: DavidePanza
 email: davide.panza@gmail.com
 
 authors:
@@ -58,7 +58,7 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you don't need projects, comment the *projects* configs below
 projects: true

@@ -2,17 +2,108 @@
 layout: page
 title: Projects
 ---
-<section class="list">
-    {% for post in site.posts %}
-        {% if post.projects %}
-            {% if post.hidden != true %}
-                <div class="item {% if post.star %}star{% endif %}">
-                    <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                        <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                        <h3 class="title">{{ post.title }}</h3>
-                    </a>
-                </div>
+
+
+<!-- Large Language Models Projects -->
+<section class="project-category">
+    <h2>Large Language Models</h2>
+    <div class="list">
+        {% for post in site.posts %}
+            {% if post.projects and post.hidden != true %}
+                {% assign is_llm = false %}
+                {% for tag in post.tag %}
+                    {% if tag == 'llm' or tag == 'rag' or tag == 'finetuning' or tag == 'nlp' %}
+                        {% assign is_llm = true %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                {% if is_llm %}
+                    <div class="item">
+                        <a class="url" href="{{ post.url | relative_url }}">
+                            <h3 class="title">{{ post.title }}</h3>
+                            <p class="description">{{ post.description }}</p>
+                        </a>
+                    </div>
+                {% endif %}
             {% endif %}
-        {% endif %}
-    {% endfor %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ETL & Data Engineering Projects -->
+<section class="project-category">
+    <h2>ETL & Data Engineering</h2>
+    <div class="list">
+        {% for post in site.posts %}
+            {% if post.projects and post.hidden != true %}
+                {% assign is_etl = false %}
+                {% for tag in post.tag %}
+                    {% if tag == 'data-engineering' or tag == 'etl' or tag == 'fastapi' or tag == 'aws' or tag == 'react' or tag == 'airflow' or tag == 'vector-search' %}
+                        {% assign is_etl = true %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                {% if is_etl %}
+                    <div class="item">
+                        <a class="url" href="{{ post.url | relative_url }}">
+                            <h3 class="title">{{ post.title }}</h3>
+                            <p class="description">{{ post.description }}</p>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Computer Vision Projects -->
+<section class="project-category">
+    <h2>Computer Vision</h2>
+    <div class="list">
+        {% for post in site.posts %}
+            {% if post.projects and post.hidden != true %}
+                {% assign is_cv = false %}
+                {% for tag in post.tag %}
+                    {% if tag == 'computer-vision' or tag == 'pytorch' or tag == 'conservation' %}
+                        {% assign is_cv = true %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                {% if is_cv %}
+                    <div class="item">
+                        <a class="url" href="{{ post.url | relative_url }}">
+                            <h3 class="title">{{ post.title }}</h3>
+                            <p class="description">{{ post.description }}</p>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Machine Learning Projects -->
+<section class="project-category">
+    <h2>Machine Learning</h2>
+    <div class="list">
+        {% for post in site.posts %}
+            {% if post.projects and post.hidden != true %}
+                {% assign is_ml = false %}
+                {% for tag in post.tag %}
+                    {% if tag == 'machine-learning' or tag == 'scikit-learn' or tag == 'data-analysis' %}
+                        {% assign is_ml = true %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                {% if is_ml %}
+                    <div class="item">
+                        <a class="url" href="{{ post.url | relative_url }}">
+                            <h3 class="title">{{ post.title }}</h3>
+                            <p class="description">{{ post.description }}</p>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
 </section>

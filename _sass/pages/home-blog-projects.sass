@@ -23,25 +23,101 @@
             box-shadow: $omega 0 0 0 5px
             border-radius: 3px
 
+// Projects-specific styles
+.projects
+    // Remove underlines from ALL project links
+    a, a:hover, a:visited, a:active, a:focus
+        text-decoration: none !important
+    
+    // Add indentation to entire project items
+    .list .item
+        padding-left: 2rem !important
+        
+    // Section spacing and styling
+    .project-category
+        margin-bottom: 8rem // Much more spacing between sections
+        
+        h2
+            font-size: 2.5rem // Bigger section font
+            font-weight: 600
+            margin-bottom: 1.5rem
+            padding-bottom: 0.8rem
+            border-bottom: 2px solid $delta // Purple underline using theme color
+            color: $alpha
+            text-align: left
+
+    > .list
+        margin-top: 2rem
+        padding-top: 2rem
+
 .home > .list,
 .blog > .list,
 .projects > .list
     > .item
         display: block
         width: 95%
-        margin: 0 auto
+        margin: 0 auto 4rem auto // Much more spacing between projects
 
     > .item > .url
         width: 100%
         display: block
-        padding: 20px 0
-        text-decoration: none
+        padding: 25px 0 // Increased padding (removed padding-left from here)
+        text-decoration: none !important
+        border: none !important // Remove any borders
+        border-bottom: none !important
+        
+        &:hover
+            text-decoration: none !important // No underline on hover
+            border-bottom: none !important
+            
+        // Remove purple underlines from titles and descriptions - use !important
+        &, &:hover, &:visited, &:active, &:focus, &:link
+            text-decoration: none !important
+            border-bottom: none !important
+            box-shadow: none !important
 
     > .item > .url > .title
-        margin: 0
-        width: 75%
-        font-weight: 500
+        margin: 0 0 1rem 0
+        width: 100% // Full width instead of 75%
+        font-weight: 600
+        font-size: 1.6rem // Bigger title font
         transition: all ease-in-out .2s
+        text-decoration: none !important
+        border-bottom: none !important
+        box-shadow: none !important
+        color: $alpha
+        
+        &:hover
+            color: $delta
+            text-decoration: none !important
+            border-bottom: none !important
+            box-shadow: none !important
+            
+        &, &:hover, &:visited, &:active, &:focus, &:link
+            text-decoration: none !important
+            border-bottom: none !important
+            box-shadow: none !important
+
+    // Style for descriptions
+    > .item > .url > .description,
+    > .item > .url > p
+        margin: 0 0 2rem 0
+        font-size: 1.2rem // Bigger description font
+        line-height: 1.5
+        color: $beta
+        text-decoration: none !important
+        border-bottom: none !important
+        box-shadow: none !important
+        
+        &:hover
+            text-decoration: none !important
+            border-bottom: none !important
+            box-shadow: none !important
+            
+        &, &:hover, &:visited, &:active, &:focus, &:link
+            text-decoration: none !important
+            border-bottom: none !important
+            box-shadow: none !important
 
     > .item:hover > .url > .title
         color: $delta
@@ -65,7 +141,7 @@
 .blog > .list > .item > .url,
 .projects > .list > .item > .url
     > .title
-        display: inline
+        display: block // Changed from inline to block for better spacing
 
     > .emoji
         display: inline

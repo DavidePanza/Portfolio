@@ -6,12 +6,13 @@
     z-index: 99
 
     > .link > .selfie
-        width: 125px
-        height: 125px
+        width: 200px
+        height: 200px
         margin-bottom: 25px
         border-radius: 100%
         transition: all .2s
         opacity: 1
+        object-fit: cover  // Add this line to prevent squishing
 
         &:hover
             box-shadow: 0 0px 4px 0 rgba(0,0,0,0.18), 0 0px 12px 0 rgba(0,0,0,0.15)
@@ -26,7 +27,7 @@
         font-weight: $thin-font
         font-style: normal
         color: $gama
-        width: 70%
+        width: 85%
         margin: 0 auto 30px
 
         // if you put some links in your bio. ;)
