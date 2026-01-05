@@ -53,4 +53,4 @@ This is a comprehensive data science case study focused on materials analysis an
 - **Modular Codebase**: Separate modules for processing, visualization, similarity computation, and reporting
 
 ### Links
-- [GitHub Repository](https://github.com/DavidePanza/MaterialsAnalysis_CaseStudy/tree/main) 
+- [GitHub Repository](https://github.com/DavidePanza/MaterialsAnalysis_CaseStudy/tree/main/Notebooks) 
