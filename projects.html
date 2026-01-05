@@ -89,13 +89,16 @@ title: Projects
         {% for post in site.posts %}
             {% if post.projects and post.hidden != true %}
                 {% assign is_ml = false %}
+                {% assign is_ds = false %}
                 {% for tag in post.tag %}
-                    {% if tag == 'machine-learning' or tag == 'scikit-learn' %}
+                    {% if tag == 'data-science' %}
+                        {% assign is_ds = true %}
+                    {% endif %}
+                    {% if tag == 'machine-learning' %}
                         {% assign is_ml = true %}
-                        {% break %}
                     {% endif %}
                 {% endfor %}
-                {% if is_ml %}
+                {% if is_ml and is_ds == false %}
                     <div class="item">
                         <a class="url" href="{{ post.url | relative_url }}">
                             <h3 class="title">{{ post.title }}</h3>
@@ -116,7 +119,7 @@ title: Projects
             {% if post.projects and post.hidden != true %}
                 {% assign is_ds = false %}
                 {% for tag in post.tag %}
-                    {% if tag == 'data-science' or tag == 'data-analysis' %}
+                    {% if tag == 'data-science' %}
                         {% assign is_ds = true %}
                         {% break %}
                     {% endif %}
