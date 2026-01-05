@@ -48,5 +48,5 @@ React → FastAPI Proxy → API Gateway → Lambda → Athena → S3 → Fronten
 - **Development**: Python, AWS SDK
 
 ### Links
-- [GitHub Repository](https://lnkd.in/e7uCAZcD)
-- [Try the App](https://lnkd.in/exNqCbSM)
+- [GitHub Repository](https://github.com/DavidePanza/ETL_EarthquakeDynamicDashboard)
+- [Try the App](https://huggingface.co/spaces/davidepanza/Dynamic_Earthquake_Dashboard)

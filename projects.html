@@ -90,12 +90,38 @@ title: Projects
             {% if post.projects and post.hidden != true %}
                 {% assign is_ml = false %}
                 {% for tag in post.tag %}
-                    {% if tag == 'machine-learning' or tag == 'scikit-learn' or tag == 'data-analysis' %}
+                    {% if tag == 'machine-learning' or tag == 'scikit-learn' %}
                         {% assign is_ml = true %}
                         {% break %}
                     {% endif %}
                 {% endfor %}
                 {% if is_ml %}
+                    <div class="item">
+                        <a class="url" href="{{ post.url | relative_url }}">
+                            <h3 class="title">{{ post.title }}</h3>
+                            <p class="description">{{ post.description }}</p>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Data Science Projects -->
+<section class="project-category">
+    <h2>Data Science</h2>
+    <div class="list">
+        {% for post in site.posts %}
+            {% if post.projects and post.hidden != true %}
+                {% assign is_ds = false %}
+                {% for tag in post.tag %}
+                    {% if tag == 'data-science' or tag == 'data-analysis' %}
+                        {% assign is_ds = true %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                {% if is_ds %}
                     <div class="item">
                         <a class="url" href="{{ post.url | relative_url }}">
                             <h3 class="title">{{ post.title }}</h3>
