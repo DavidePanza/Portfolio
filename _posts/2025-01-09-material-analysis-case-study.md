@@ -50,7 +50,6 @@ This is a comprehensive data science case study focused on materials analysis an
 ### Project Structure
 - **Task 1**: Supplier data integration, standardization, and quality assessment
 - **Task 2**: RFQ similarity analysis with custom algorithms and procurement recommendations
-- **Modular Codebase**: Separate modules for processing, visualization, similarity computation, and reporting
 
 ### Links
 - [GitHub Repository](https://github.com/DavidePanza/MaterialsAnalysis_CaseStudy/tree/main/Notebooks) 
